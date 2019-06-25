@@ -2,5 +2,8 @@ git init
 git status
 git diff
 git add .
-git commit -m
+git commit -m "Your message about the commit"
+git checkout -b <my branch name>
+git branch
 git callback
+https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
