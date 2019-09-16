@@ -5,12 +5,13 @@ Connection connection = DriverManager.getConnection("jdbc:sqlite:C:/work/mydatab
 A UNIX (Linux, Mac OS X, etc) file /home/leo/work/mydatabase.db
 
 Connection connection = DriverManager.getConnection("jdbc:sqlite:/home/leo/work/mydatabase.db");
+--------
 
-
+Connection connection = null;
 try
         {
           // create a database connection
-          Connection connection = DriverManager.getConnection("jdbc:sqlite:sample.db"); 
+          connection = DriverManager.getConnection("jdbc:sqlite:sample.db"); 
           Statement statement = connection.createStatement();
           statement.setQueryTimeout(30);  // set timeout to 30 sec.
 
