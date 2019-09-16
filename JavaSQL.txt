@@ -5,8 +5,8 @@ Connection connection = DriverManager.getConnection("jdbc:sqlite:C:/work/mydatab
 A UNIX (Linux, Mac OS X, etc) file /home/leo/work/mydatabase.db
 
 Connection connection = DriverManager.getConnection("jdbc:sqlite:/home/leo/work/mydatabase.db");
---------
 
+CODE -------------->
 
 try (Connection connection = DriverManager.getConnection("jdbc:sqlite:test.db");
         Statement statement = connection.createStatement()){
@@ -17,3 +17,8 @@ try (Connection connection = DriverManager.getConnection("jdbc:sqlite:test.db");
 catch (SQLException e){
         System.err.println("Something went wrong " + e.getMessage());
 }
+
+
+---------------------------------------------------------------------------------------------------------------------------
+https://javaconceptoftheday.com/difference-between-executequery-executeupdate-execute-in-jdbc/
+https://github.com/xerial/sqlite-jdbc
