@@ -22,3 +22,5 @@ catch (SQLException e){
 ---------------------------------------------------------------------------------------------------------------------------
 https://javaconceptoftheday.com/difference-between-executequery-executeupdate-execute-in-jdbc/
 https://github.com/xerial/sqlite-jdbc
+---------------------------------------------------------------------------------------------------------------------------
+https://www.codecademy.com/articles/sql-commands
