@@ -11,8 +11,8 @@ Connection connection = DriverManager.getConnection("jdbc:sqlite:/home/leo/work/
 try (Connection connection = DriverManager.getConnection("jdbc:sqlite:test.db");
         Statement statement = connection.createStatement()){
         
-        statement.execute("DROP TABLE IF EXISTS contacts");
-        statement.execute("CREATE TABLE contacts(name STRING, phone STRING, email STRING)");
+      
+        statement.execute("CREATE TABLE IF NOT EXISTS contacts(name STRING, phone STRING, email STRING)");
 }
 catch (SQLException e){
         System.err.println("Something went wrong " + e.getMessage());
