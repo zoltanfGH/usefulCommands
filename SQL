@@ -4,5 +4,8 @@ MySQL vs ORACLE
 MySQL -->  SELECT * FROM CITY WHERE ID = 1661
 ORACLE --> SELECT * FROM CITY WHERE ID LIKE 1661;
 
+2) "" vs ''
 MySQL -->  SELECT * FROM CITY WHERE COUNTRYCODE = "JPN"; //String can be in "" or ''
 ORACLE --> SELECT * FROM CITY WHERE COUNTRYCODE LIKE 'JPN'; // Must be in ''
+
+3) ORACLE SQL query must end with ;
