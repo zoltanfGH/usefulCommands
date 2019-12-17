@@ -48,6 +48,18 @@ WHERE some_column = some_value;
 
 UPDATE statements allow you to edit rows in a table.
 
+CREATE DB
+
+CREATE DATABASE databasename; 
+
+The CREATE DATABASE statement is used to create a new SQL database.
+
+DROP TABLE
+
+DROP TABLE table_name; 
+
+The DROP TABLE statement is used to drop an existing table in a database.
+
 ----------------------------------------------------------------------------
 MySQL vs ORACLE
 ----------------------------------------------------------------------------
