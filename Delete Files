@@ -1,0 +1,7 @@
+PowerShell :
+
+Get-Childitem -path c:\path -Filter *.jpg -Recurse | where-object {$_.Name -ilike "*_bad*"} | Remove-Item -Force -WhatIf
+
+This little script will delete every JPG files located under c:\path (and subfolders), containing "_bad" in their name.
+
+Simply change the root path to match your needs. The -whatif parameter used at the end of the script permits to see what files will be deleted. Remove this switch when your are ready to delete them.
